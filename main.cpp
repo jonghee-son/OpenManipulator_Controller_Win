@@ -305,7 +305,7 @@ int main() {
 
 		if (temp == 'u') {
 			// Write goal position
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL1_ID, ADDR_PRO_GOAL_POSITION, ++dxl1_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL1_ID, ADDR_PRO_GOAL_POSITION, dxl1_present_position + 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
@@ -316,7 +316,7 @@ int main() {
 			}
 		}
 		else if (temp == 'j') {
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL1_ID, ADDR_PRO_GOAL_POSITION, --dxl1_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL1_ID, ADDR_PRO_GOAL_POSITION, dxl1_present_position - 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
@@ -327,7 +327,7 @@ int main() {
 			}
 		}
 		else if (temp == 'i') {
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL2_ID, ADDR_PRO_GOAL_POSITION, ++dxl2_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL2_ID, ADDR_PRO_GOAL_POSITION, dxl2_present_position + 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
@@ -338,7 +338,7 @@ int main() {
 			}
 		}
 		else if (temp == 'k') {
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL2_ID, ADDR_PRO_GOAL_POSITION, --dxl2_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL2_ID, ADDR_PRO_GOAL_POSITION, dxl2_present_position - 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
@@ -349,7 +349,7 @@ int main() {
 			}
 		}
 		else if (temp == 'o') {
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL3_ID, ADDR_PRO_GOAL_POSITION, ++dxl3_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL3_ID, ADDR_PRO_GOAL_POSITION, dxl3_present_position + 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
@@ -360,7 +360,7 @@ int main() {
 			}
 		}
 		else if (temp == 'l') {
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL3_ID, ADDR_PRO_GOAL_POSITION, --dxl3_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL3_ID, ADDR_PRO_GOAL_POSITION, dxl3_present_position - 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
@@ -371,7 +371,7 @@ int main() {
 			}
 		}
 		else if (temp == 'p') {
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL4_ID, ADDR_PRO_GOAL_POSITION, ++dxl4_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL4_ID, ADDR_PRO_GOAL_POSITION, dxl4_present_position + 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
@@ -382,7 +382,7 @@ int main() {
 			}
 		}
 		else if (temp == ';') {
-			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL4_ID, ADDR_PRO_GOAL_POSITION, --dxl4_present_position, &dxl_error);
+			dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, DXL4_ID, ADDR_PRO_GOAL_POSITION, dxl4_present_position - 10, &dxl_error);
 			if (dxl_comm_result != COMM_SUCCESS)
 			{
 				printf("%s\n", packetHandler->getTxRxResult(dxl_comm_result));
